@@ -1,0 +1,2 @@
+<http://example.org/cade> <http://example.org/visited> "Germany"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/emma> <http://example.org/age> "36"^^<http://www.w3.org/2001/XMLSchema#integer> .

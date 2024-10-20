@@ -1,0 +1,40 @@
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+
+# Латунь — це сплав міді та цинку
+ex:Brass rdf:type ex:Alloy .
+ex:Brass ex:consistsOf ex:Copper, ex:Zinc .
+
+# SPIEGEL — німецький інформаційний журнал зі штаб-квартирою в Гамбурзі
+ex:SPIEGEL rdf:type schema:Magazine .
+ex:SPIEGEL schema:publisherLocation "Hamburg"@de .
+ex:SPIEGEL schema:countryOfOrigin "Germany" .
+
+# Есе складається зі вступу, основної частини та висновку
+ex:Essay rdf:type schema:CreativeWork .
+ex:Essay schema:hasPart ex:Introduction, ex:Body, ex:Conclusion .
+
+# Павло знає, що Олена живе в Полтаві
+ex:Pavlo schema:knows ex:Olena .
+ex:Olena schema:address "Poltava"@uk .
+
+# Олена каже, що її друг живе в Києві
+ex:Olena schema:says ex:HerFriendLivesInKyiv .
+ex:HerFriendLivesInKyiv rdf:subject ex:Olena .
+ex:HerFriendLivesInKyiv rdf:predicate schema:knows .
+ex:HerFriendLivesInKyiv rdf:object ex:Friend .
+ex:Friend schema:address "Kyiv"@uk .
+
+# Стефан думає, що Анна знає, що він знає її батька
+ex:Stefan schema:thinks ex:AnnaKnows .
+ex:AnnaKnows rdf:subject ex:Anna .
+ex:AnnaKnows rdf:predicate schema:knows .
+ex:AnnaKnows rdf:object ex:AnnaFather .
+ex:AnnaFather schema:relatedTo ex:Stefan .
+
+# Іван знає, що Рим є столицею Італії
+ex:Ivan schema:knows ex:RomeIsCapital .
+ex:RomeIsCapital rdf:subject ex:Roma .
+ex:RomeIsCapital rdf:predicate schema:capitalOf .
+ex:RomeIsCapital rdf:object ex:Italy .
