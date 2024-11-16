@@ -1,0 +1,36 @@
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Cade a foaf:Person ;
+    ex:degree "Bachelor of Biology, University of California, 2011"^^xsd:string ;
+    ex:homeAddress "1516 Henry Street, Berkeley, California 94709, USA"^^xsd:string ;
+    ex:met "Paris, August 2014"^^xsd:string ;
+    ex:visited "Canada"^^xsd:string,
+        "France"^^xsd:string ;
+    foaf:interest "Birds"^^xsd:string,
+        "Ecology"^^xsd:string,
+        "Environment"^^xsd:string,
+        "Photography"^^xsd:string,
+        "Travel"^^xsd:string ;
+    foaf:knows ex:Emma ;
+    foaf:name "Cade"^^xsd:string .
+
+ex:Emma a foaf:Person ;
+    ex:degree "Master of Chemistry, University of Valencia, 2015"^^xsd:string ;
+    ex:homeAddress "Carrer de la Guardia Civil 20, 46020 Valencia, Spain"^^xsd:string ;
+    ex:visited "Denmark"^^xsd:string,
+        "France"^^xsd:string,
+        "Germany"^^xsd:string,
+        "Italy"^^xsd:string,
+        "Portugal"^^xsd:string,
+        "Sweden"^^xsd:string ;
+    foaf:interest "Cycling"^^xsd:string,
+        "Music"^^xsd:string,
+        "Travel"^^xsd:string ;
+    foaf:knows ex:Cade ;
+    foaf:name "Emma"^^xsd:string ;
+    foaf:topic_interest "Air Pollution"^^xsd:string,
+        "Toxic Waste"^^xsd:string,
+        "Waste Management"^^xsd:string .
+

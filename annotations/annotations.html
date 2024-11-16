@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-конференція "TechFuture 2024"</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "IT-конференція 'TechFuture 2024'",
+        "startDate": "2024-12-10T09:00",
+        "endDate": "2024-12-10T18:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "Конференц-центр ITHub",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "вул. Технологічна, 5",
+                "addressLocality": "Київ",
+                "postalCode": "01001",
+                "addressCountry": "Україна"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "TechFuture Org",
+            "url": "https://techfuture.org"
+        },
+        "description": "Головна IT-конференція року, присвячена майбутнім технологіям.",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://techfuture.org/tickets",
+            "price": "1500.00",
+            "priceCurrency": "UAH",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2024-10-01T00:00"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>IT-конференція "TechFuture 2024"</h1>
+        <p>Головна IT-подія року для професіоналів та ентузіастів!</p>
+    </header>
+
+    <section itemscope itemtype="https://schema.org/Event">
+        <h2 itemprop="name">IT-конференція "TechFuture 2024"</h2>
+        <p>Дата: <time itemprop="startDate" datetime="2024-12-10T09:00">10 грудня 2024</time></p>
+        <p>Час: з <time itemprop="startDate" datetime="2024-12-10T09:00">09:00</time> до <time itemprop="endDate" datetime="2024-12-10T18:00">18:00</time></p>
+        <p>Місце проведення: 
+            <span itemprop="location" itemscope itemtype="https://schema.org/Place">
+                <span itemprop="name">Конференц-центр ITHub</span>, 
+                <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">вул. Технологічна, 5</span>, 
+                    <span itemprop="addressLocality">Київ</span>, 
+                    <span itemprop="postalCode">01001</span>, 
+                    <span itemprop="addressCountry">Україна</span>
+                </span>
+            </span>
+        </p>
+        <p>Організатор: <span itemprop="organizer" itemscope itemtype="https://schema.org/Organization">
+            <span itemprop="name">TechFuture Org</span>
+        </span></p>
+        <p>Опис: <span itemprop="description">Головна IT-конференція року, присвячена майбутнім технологіям.</span></p>
+        <p>Квитки: <a href="https://techfuture.org/tickets" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="price">1500.00</span> <span itemprop="priceCurrency">UAH</span> (в наявності)
+        </a></p>
+    </section>
+
+    <section vocab="https://schema.org/" typeof="Event">
+        <h2 property="name">IT-конференція "TechFuture 2024"</h2>
+        <p>Дата: <time property="startDate" datetime="2024-12-10T09:00">10 грудня 2024</time></p>
+        <p>Місце проведення: 
+            <span property="location" typeof="Place">
+                <span property="name">Конференц-центр ITHub</span>, 
+                <span property="address" typeof="PostalAddress">
+                    <span property="streetAddress">вул. Технологічна, 5</span>, 
+                    <span property="addressLocality">Київ</span>, 
+                    <span property="postalCode">01001</span>, 
+                    <span property="addressCountry">Україна</span>
+                </span>
+            </span>
+        </p>
+        <p>Організатор: <span property="organizer" typeof="Organization">
+            <span property="name">TechFuture Org</span>
+        </span></p>
+    </section>
+</body>
+</html>
